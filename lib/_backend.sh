@@ -68,7 +68,7 @@ DB_DIALECT=
 DB_USER=${db_user}
 DB_PASS=${db_pass}
 DB_NAME=${db_name}
-DB_ROOT_PASS=${mysql_root_passworddb_name}
+DB_ROOT_PASS=${mysql_root_password}
 
 JWT_SECRET=${jwt_secret}
 JWT_REFRESH_SECRET=${jwt_refresh_secret}
