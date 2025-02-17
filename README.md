@@ -14,7 +14,7 @@ git clone https://github.com/equinhone/2025_whaticket-installer
 Now, all you gotta do is making it executable:
 
 ```bash
-sudo chmod +x ./whaticket-installer/whaticket
+sudo chmod +x ./2025_whaticket-installer/whaticket
 ```
 
 ### usage
@@ -22,7 +22,7 @@ sudo chmod +x ./whaticket-installer/whaticket
 After downloading and making it executable, you need to **navigate into** the installer directory and **run the script with sudo**:
 
 ```bash
-cd ./whaticket-installer
+cd ./2025_whaticket-installer
 ```
 
 ```bash
