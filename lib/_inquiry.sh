@@ -60,15 +60,6 @@ EOF
   sleep 2
 }
 
-
-docker-compose up -d mysql
-
-# To administer this mysql database easily using phpmyadmin. 
-# It will run by default on port 9000, but can be changed in .env using `PMA_PORT`
-docker-compose -f docker-compose.phpmyadmin.yaml up -d
-
-
-
 get_urls() {
   
   get_frontend_url
@@ -95,7 +86,9 @@ inquiry_options() {
   read -p "> " option
 
   case "${option}" in
-    0) get_database_instancia ;;
+    0) get_database_instancia
+       exit
+       ;;      
     
     1) get_urls ;;
 
