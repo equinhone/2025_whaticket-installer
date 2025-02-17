@@ -34,8 +34,9 @@ system_git_clone() {
 
   sleep 2
 
-  sudo su - deploy <<EOF
-  git clone https://github.com/canove/whaticket /home/deploy/whaticket/
+  sudo su - deploy <<EOF  
+  git clone https://github.com/equinhone/2025_whaticket-community /home/deploy/whaticket/
+
 EOF
 
   sleep 2
