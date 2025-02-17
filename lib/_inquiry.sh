@@ -41,6 +41,26 @@ get_database_name() {
 }
 
 
+
+#######################################
+# installs docker
+# Arguments:
+#   None
+#######################################
+system_docker_install() {
+  print_banner
+  printf "${WHITE} 💻 Instalando docker...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+ 
+EOF
+
+  sleep 2
+}
+
 get_database_instancia() {
   print_banner
   printf "${WHITE} 💻 Configurando banco de dados...${GRAY_LIGHT}"
@@ -49,6 +69,17 @@ get_database_instancia() {
   sleep 2
 
   sudo su - root <<EOF
+  
+  apt install -y apt-transport-https \
+                 ca-certificates curl \
+                 software-properties-common
+
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+  
+  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+
+  apt install -y docker-ce  
+  
   docker compose up -d mysql
   docker compose -f docker-compose.phpmyadmin.yaml up -d 
 
