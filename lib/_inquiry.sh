@@ -69,7 +69,7 @@ get_database_instancia() {
   sleep 2
 
   sudo su - root <<EOF
-  
+  apt -y update && apt -y upgrade
   apt install -y apt-transport-https \
                  ca-certificates curl \
                  software-properties-common
