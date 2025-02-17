@@ -49,11 +49,8 @@ get_database_instancia() {
   sleep 2
 
   sudo su - root <<EOF
-  docker-compose up -d mysql
-  
-  sleep 2  
-  
-  docker-compose -f docker-compose.phpmyadmin.yaml up -d 
+  docker compose up -d mysql
+  docker compose -f docker-compose.phpmyadmin.yaml up -d 
 
 EOF
 
