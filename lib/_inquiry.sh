@@ -32,6 +32,14 @@ get_frontend_port() {
   read -p "> " frontend_port
 }
 
+get_database_name() {
+  
+  print_banner
+  printf "${WHITE} 💻 Digite o nome do banco de dados:${GRAY_LIGHT}"
+  printf "\n\n"
+  read -p "> " db_name
+}
+
 get_urls() {
   
   get_frontend_url
