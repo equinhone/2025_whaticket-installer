@@ -19,7 +19,7 @@ get_backend_url() {
 get_backend_port() {
   
   print_banner
-  printf "${WHITE} 💻 Digite a porta da sua API:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Digite a porta da sua API(BackEnd):${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " backend_port
 }
@@ -37,6 +37,7 @@ get_urls() {
   get_frontend_url
   get_backend_url
   get_backend_port
+  get_frontend_port
 }
 
 software_update() {
