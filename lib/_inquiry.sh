@@ -82,11 +82,11 @@ EOF
 }
 
 get_urls() {
-  
+  get_database_name
   get_frontend_url
-  get_backend_url
-  get_backend_port
+  get_backend_url  
   get_frontend_port
+  get_backend_port
 }
 
 software_update() {
