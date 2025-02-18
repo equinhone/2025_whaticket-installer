@@ -40,13 +40,6 @@ get_database_name() {
   read -p "> " db_name
 }
 
-
-
-#######################################
-# installs docker
-# Arguments:
-#   None
-#######################################
 system_docker_install() {
   print_banner
   printf "${WHITE} 💻 Instalando docker...${GRAY_LIGHT}"
