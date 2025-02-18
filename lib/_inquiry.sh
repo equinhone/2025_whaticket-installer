@@ -79,7 +79,7 @@ get_database_instancia() {
   add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 
   apt install -y docker-ce  
-  
+  cd /root/2025_whaticket-installer/
   docker compose up -d mysql
   docker compose -f docker-compose.phpmyadmin.yaml up -d 
 
